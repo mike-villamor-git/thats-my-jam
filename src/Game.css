@@ -1,0 +1,10 @@
+.Game {
+    display: flex;
+    width: auto;
+    height: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+

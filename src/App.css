@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(165, 197, 225);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color:#8f6952;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3%;
+}
+
+.map {
+  height: 600px;
+  width: 800px;
+  border: 1px solid black;
+  background-color: rgb(159, 248, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("./assets/jamGame/initialLoad.PNG");
+  background-size: cover;
+}
+
+.gameStart {
+  
+  background-image: url("./assets/jamGame/storefront.PNG");
+  background-size: cover;
+}
+
+.map button {
+  height: 10%;
+  width: 25%;
+  color:rgb(2, 2, 2);
+  background-color: rgb(255, 244, 36);
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+.Player {
+  
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 350px;
+  top: 350px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+  position: relative;
+}
+
+.navBar button {
+  margin-left: 5%;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 15%;
+  height: auto;
+}
+
+.navBar p {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFF
+}
+
+.Menu {
+  border: 4mm ridge rgba(243, 123, 36, 0.6);
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(247, 213, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 1%;
+  width: 350px
+}
+
+.menuNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  top: 0px;
+  position: absolute;
+}
+
+.menuNavBar button {
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+  text-align: center;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.menuNavBar button:hover {
+  color: red
+}
+
+.menuOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
