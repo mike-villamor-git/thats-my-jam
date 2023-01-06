@@ -1,0 +1,31 @@
+.customer {
+    height: 500px;
+    width: 500px;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.deer {
+    background-image: url("./assets/customers/deer.PNG");
+    background-size: cover;
+  }
+
+  .bear {
+
+    background-image: url("./assets/customers/bear.png");
+    background-size: cover;
+  }
+
+  .elephant {
+    background-image: url("./assets/customers/elephant.png");
+    background-size: cover;
+  }
+
+  .fly {
+    background-image: url("./assets/customers/fly.png");
+    background-size: cover;
+  }
