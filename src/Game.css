@@ -2,21 +2,26 @@
     display: flex;
     width: auto;
     height: 600px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
     
 }
 
 .Counter {
-    width: 800px;
+    width: 801px;
     height: 200px;
     background-image: url("./assets/jamGame/counter.PNG");
     top: 420px;
-    background-repeat: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: -1;
+  }
+
+  .Game button {
+    width: auto;
+    margin-bottom: 5%;
   }
