@@ -25,3 +25,21 @@
     width: auto;
     margin-bottom: 5%;
   }
+
+  .Jams{
+    display: flex;
+    width: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .jam{
+    height: 10%;
+    width: 25%;
+    color: rgb(2, 2, 2);
+    background-color: transparent !important;
+    margin-top: -50px !important;
+    margin-right: 0% !important;
+  }
