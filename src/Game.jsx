@@ -4,9 +4,12 @@ import Customer from './Customer'
 import Menu from './Menu'
 
 function Game(props){
-    const [customer, setCustomer] = useState(Math.floor(Math.random() * 5))
+    const [customer, setCustomer] = useState(Math.floor(Math.random() * 4))
 
-    const newCustomer = () => setCustomer(Math.floor(Math.random() * 5))
+    const newCustomer = () => {
+        setCustomer(Math.floor(Math.random() * 4))
+       
+    }
 
     return(
         <div className="Game">
