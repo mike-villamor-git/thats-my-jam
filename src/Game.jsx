@@ -22,8 +22,18 @@ function Game(props){
 
     return(
         <div className="Game">
-           <div className="Counter"></div>
+           <div className="Counter">
+
+           <div className="Jams">
+            <button className="jam"><img src="/src/assets/jams/banana_jam.png" width="85px" /></button>
+            <button className="jam"><img src="/src/assets/jams/blueberry_jam.png" width="85px" /></button>
+            <button className="jam"><img src="/src/assets/jams/grape_jam.png" width="85px" /></button>
+            <button className="jam"><img src="/src/assets/jams/strawberry_jam.png" width="85px" /></button>
+            </div>
+           </div>
+      
            <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]}/>
+           
            <button onClick={handleServeClick}>Serve</button>
         </div>
         
