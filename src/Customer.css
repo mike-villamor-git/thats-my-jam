@@ -36,6 +36,9 @@
     height: 300px;
     background-image: url("./assets/jamGame/bubble.PNG");
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .b-deer {
@@ -56,4 +59,49 @@
   .b-bear {
     margin-left: 55%;
     margin-top: -10%;
+  }
+
+  .fruit {
+    width: 75px;
+    height: 75px;
+  }
+
+  .banana {
+    background-image: url("./assets/jamGame/banana.png");
+    background-size: cover;
+  }
+
+  .strawberry {
+    background-image: url("./assets/jamGame/strawberry.png");
+    background-size: cover;
+  }
+
+  .blueberry {
+    background-image: url("./assets/jamGame/blueberry.png");
+    background-size: cover;
+  }
+
+  .grape {
+    background-image: url("./assets/jamGame/grape.png");
+    background-size: cover;
+  }
+
+  .f-1 {
+    margin-top: 40%;
+    margin-left: 50%;
+  }
+
+  .f-2 {
+    margin-top: 40%;
+    margin-left: 20%;
+  }
+
+  .f-3 {
+    margin-left: 50%;
+    margin-top: -21%;
+  }
+
+  .f-4 {
+    margin-top: -20%;
+    margin-left: 20%;
   }
