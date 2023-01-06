@@ -5,7 +5,7 @@ function NavBar(props) {
     return (
         <div className="navBar">
                 <button onClick={props.menuOpened}>Menu</button>
-                <p>Points: </p>
+                <p>Points: {props.points}</p>
         </div>
     )
 }
