@@ -2,15 +2,13 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import './Customer.css'
 
-function Customer(props) {
+function Customer({currCustomer}) {
 
-    let customers = ["deer", "bear", "elephant", "fly"]
-    let randomCustomer = Math.floor(Math.random() * 5)
-
-    console.log(randomCustomer)
+    const customers = ["deer", "bear", "elephant", "fly"]
+    
     return (
         <>
-        <div className={"customer " + customers[randomCustomer]}>
+        <div className={"customer " + customers[currCustomer]}>
         </div>
        </>
     )
