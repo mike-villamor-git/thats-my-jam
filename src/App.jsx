@@ -8,6 +8,8 @@ import Menu from './Menu'
 function App(){
     const [gameStarted, setGameStarted] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
+   
+    
 
     const startGame = () => {
         setGameStarted(gameStarted => !gameStarted)
@@ -17,7 +19,7 @@ function App(){
     <div className="App">
         <div className={gameStarted ? "map gameStart" : "map"}>
             {gameStarted ? <NavBar menuOpened={openMenu}/> : null}
-            {gameStarted ? <Game/> : <button onClick={startGame}>Click To Play!</button>}
+            {gameStarted ? <Game /> : <button onClick={startGame}>Click To Play!</button>}
         </div>
         { menuOpen ? <div className="Menu">
             <Menu quitGame={startGame} closeMenu={openMenu}/>

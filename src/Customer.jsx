@@ -4,13 +4,13 @@ import './Customer.css'
 
 function Customer(props) {
 
-    let customers = ["deer", "bear", "elephant", "fly"]
+    const customers = ["deer", "bear", "elephant", "fly"]
     let randomCustomer = Math.floor(Math.random() * 5)
 
     console.log(randomCustomer)
     return (
         <>
-        <div className={"customer " + customers[randomCustomer]}>
+        <div className={"customer " + customers[props.currCustomer]}>
         </div>
        </>
     )
