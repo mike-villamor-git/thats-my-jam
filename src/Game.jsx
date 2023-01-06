@@ -13,6 +13,7 @@ function Game(props){
 
     return(
         <div className="Game">
+           <div className="Counter"></div>
            <Customer currCustomer={customer}/>
            <button onClick={newCustomer}>Serve</button>
         </div>

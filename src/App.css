@@ -24,11 +24,12 @@ body {
   position: relative;
   background-image: url("./assets/jamGame/initialLoad.PNG");
   background-size: cover;
+  z-index: 0;
 }
 
 .gameStart {
   
-  background-image: url("./assets/jamGame/storefront.PNG");
+  background-image: url("./assets/jamGame/backdrop.PNG");
   background-size: cover;
 }
 
