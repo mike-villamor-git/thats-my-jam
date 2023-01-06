@@ -8,3 +8,15 @@
     
 }
 
+.Counter {
+    width: 800px;
+    height: 200px;
+    background-image: url("./assets/jamGame/counter.PNG");
+    top: 420px;
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
