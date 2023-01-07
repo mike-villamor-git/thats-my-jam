@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/mike-villamor-git/thats-my-jam/issues"
   },
+  "pkg": {
+    "assets": "assets/**"
+},
   "homepage": "https://github.com/mike-villamor-git/thats-my-jam#readme"
 }
