@@ -1,5 +1,5 @@
 import './HowToPlay.css'
-import toasty from '../dist/assets/jamGame/howToPlay.png'
+// import toasty from '../dist/assets/jamGame/howToPlay.png'
 
 function HowToPlay(props){
     return(
