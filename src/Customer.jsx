@@ -11,12 +11,12 @@ function Customer({currCustomer, first, second, third, fourth, mood}) {
     return (
         <>
         <div className={"customer " + customers[currCustomer] + status[mood]}>
-            <div className={`bubble b-${customers[currCustomer]}` }>
+            {mood === 0 ? <div className={`bubble b-${customers[currCustomer]}` }>
                 <div className={`fruit ${flavors[first]} f-1`}></div>
                 <div className={`fruit ${flavors[second]} f-2`}></div>
                 <div className={`fruit ${flavors[third]} f-3`}></div>
                 <div className={`fruit ${flavors[fourth]} f-4`}></div>
-            </div>
+            </div> : null}
         </div>
        </>
     )
