@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react'
 import './Game.css'
 import Customer from './Customer'
 import Menu from './Menu'
+import banana from './assets/jams/bananaJam.png'
+import blueberry from './assets/jams/blueberryJam.png'
+import grape from './assets/jams/grapeJam.png'
+import strawberry from './assets/jams/strawberryJam.png'
 
 function Game(props){
     const [customer, setCustomer] = useState(Math.floor(Math.random() * 4))
@@ -107,10 +111,10 @@ function Game(props){
            <div className="Counter">
 
            <div className="Jams">
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src="/src/assets/jams/banana_jam.png" width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src="/src/assets/jams/blueberry_jam.png" width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src="/src/assets/jams/grape_jam.png" width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src="/src/assets/jams/strawberry_jam.png" width="85px" /></button>
+            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src={banana} width="85px" /></button>
+            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src={blueberry} width="85px" /></button>
+            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src={grape} width="85px" /></button>
+            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src={strawberry} width="85px" /></button>
             </div>
            </div>
       

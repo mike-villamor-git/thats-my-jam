@@ -1,4 +1,5 @@
 import './HowToPlay.css'
+import toasty from './assets/jamGame/howToPlay.png'
 
 function HowToPlay(props){
     return(
