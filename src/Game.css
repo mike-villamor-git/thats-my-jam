@@ -49,3 +49,40 @@
     color: yellow;
     font-size: 50px;
   }
+ 
+
+  /* Button Credit: https://getcssscan.com/css-buttons-examples, Button 56 */
+  .serveButton{
+    background-color: #fbeee0;
+    border: 2px solid #6a4935;
+    border-radius: 30px;
+    box-shadow: #6a4935 4px 4px 0 0;
+    color: #6a4935;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .serveButton:hover {
+    background-color: #fff;
+  }
+  
+  .serveButton:active {
+    box-shadow: #5c3f19 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .serveButton {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }

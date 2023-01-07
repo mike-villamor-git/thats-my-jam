@@ -106,7 +106,7 @@ function Game(props){
       
            <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]}/>
            
-           <button onClick={handleServeClick}>Serve</button>
+           <button onClick={handleServeClick} class = "serveButton">Serve</button>
         </div>
         
     )
