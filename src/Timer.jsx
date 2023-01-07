@@ -1,21 +1,20 @@
 import { useEffect, useState } from 'react'
 import './Game.css'
 
-function Timer(props) {
-    const [displayTimer, setDisplayTimer] = useState(30)
+function Timer({resetTimer, displayTimer, setDisplayTimer, setResetTimer}) {
+    
 
     useEffect(()=>{
-        console.log(props.resetTimer)
         let interval = displayTimer;
         if (displayTimer === 0){
             setDisplayTimer("TIME'S UP!!!")
             
         }
-        if (!props.resetTimer){
+        if (!resetTimer){
             setDisplayTimer(30)
             console.log('hit this')
-            props.setResetTimer()
-            console.log(props.resetTimer)
+            setResetTimer()
+            
             
         }
         else if (typeof(displayTimer) === 'number'){

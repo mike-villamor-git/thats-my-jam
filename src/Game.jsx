@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import './Game.css'
 import Customer from './Customer'
 import Menu from './Menu'
-import banana from '../dist/assets/jams/bananaJam.png'
-import blueberry from '../dist/assets/jams/blueberryJam.png'
-import grape from '../dist/assets/jams/grapeJam.png'
-import strawberry from '../dist/assets/jams/strawberryJam.png'
+import banana from './assets/jams/bananaJam.png'
+import blueberry from './assets/jams/blueberryJam.png'
+import grape from './assets/jams/grapeJam.png'
+import strawberry from './assets/jams/strawberryJam.png'
+import GameOver from './GameOver'
 
 function Game(props){
     const [customer, setCustomer] = useState(Math.floor(Math.random() * 4))
@@ -106,23 +107,37 @@ function Game(props){
        return
     }
 
+    function handleRestartClick() {
+        props.resetPoints(0);
+        props.resetTimer(30);
+        setCustomerMood(0)
+        newCustomer();
+        newFlavors();
+        setMaxJams(false);
+        setChooseJam([]);
+    }
+
     return(
         <div className="Game">
-           <div className="Counter">
-
-           <div className="Jams">
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src={banana} width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src={blueberry} width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src={grape} width="85px" /></button>
-            <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src={strawberry} width="85px" /></button>
-            </div>
+            <div className="Counter">
+            {typeof props.timer === 'number' ?
+                <div className="Jams">
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src={banana} width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src={blueberry} width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src={grape} width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src={strawberry} width="85px" /></button>
+                </div> : null }
            </div>
-      
-           <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]} mood={customerMood}/>
+           {typeof props.timer === 'number' ?
            
-           <button onClick={handleServeClick} class = "serveButton">Serve</button>
+           <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]} mood={customerMood} timer={props.timer}/>
+           : <GameOver/>}
+           {typeof props.timer === 'number' ? <button onClick={handleServeClick} className="serveButton">Serve</button> : 
+           <>
+           <button onClick={handleRestartClick} className="serveButton">Restart?</button> 
+           </>
+            }
         </div>
-        
     )
 }
 
