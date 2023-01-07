@@ -6,6 +6,11 @@ function Menu(props) {
         props.quitGame();
         props.closeMenu();
     }
+
+    const handleReset = () => {
+        props.setResetTimer(false)
+        props.closeMenu();
+    }
     return (
         <>
         <div className="menuNavBar">
@@ -15,7 +20,7 @@ function Menu(props) {
         <div className='menuOptions'>
 
             <button>How To Play</button>
-            <button>Restart</button>
+            <button onClick={handleReset}>Restart</button>
             <button onClick={handleQuitClick}>Quit</button>
         </div>
        </>
