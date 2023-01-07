@@ -9,12 +9,18 @@ function App(){
     const [gameStarted, setGameStarted] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const [points, setPoints] = useState(0);
+    const [resetTimer, setResetTimer] = useState(true)
    
     const addPoints = () => {
         setPoints(points => points + 100)
     }
-    const [resetTimer, setResetTimer] = useState(false)
     
+    const restartResetTimer = () => {
+        console.log('inside restartResetTimer function in app.js')
+        console.log('before reset: ', resetTimer)
+        setResetTimer(resetTimer => !resetTimer)
+        console.log('after reset: ', resetTimer)
+    }
 
     const startGame = () => {
         setGameStarted(gameStarted => !gameStarted)
@@ -23,11 +29,11 @@ function App(){
     return(
     <div className="App">
         <div className={gameStarted ? "map gameStart" : "map"}>
-            {gameStarted ? <NavBar  points={points} menuOpened={openMenu} resetTimer={resetTimer} setResetTimer={setResetTimer}/> : null}
+            {gameStarted ? <NavBar  points={points} menuOpened={openMenu} resetTimer={resetTimer} setResetTimer={restartResetTimer}/> : null}
             {gameStarted ? <Game points={points} addPoints={addPoints}/> : <button onClick={startGame}>Click To Play!</button>}
         </div>
         { menuOpen ? <div className="Menu">
-            <Menu quitGame={startGame} closeMenu={openMenu} setResetTimer={setResetTimer}/>
+            <Menu quitGame={startGame} closeMenu={openMenu} setResetTimer={restartResetTimer} points={points} setPoints={setPoints}/>
         </div> : null}
      </div>
     ) 

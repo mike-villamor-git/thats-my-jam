@@ -5,6 +5,7 @@ function Timer(props) {
     const [displayTimer, setDisplayTimer] = useState(30)
 
     useEffect(()=>{
+        console.log(props.resetTimer)
         let interval = displayTimer;
         if (displayTimer === 0){
             setDisplayTimer("TIME'S UP!!!")
@@ -12,7 +13,9 @@ function Timer(props) {
         }
         if (!props.resetTimer){
             setDisplayTimer(30)
-            props.setResetTimer(!props.resetTimer)
+            console.log('hit this')
+            props.setResetTimer()
+            console.log(props.resetTimer)
             
         }
         else if (typeof(displayTimer) === 'number'){

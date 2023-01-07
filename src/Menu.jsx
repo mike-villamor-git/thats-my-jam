@@ -10,7 +10,8 @@ function Menu(props) {
     }
 
     const handleReset = () => {
-        props.setResetTimer(false)
+        props.setResetTimer()
+        props.setPoints(0);
         props.closeMenu();
     }
     return (
