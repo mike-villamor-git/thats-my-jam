@@ -122,10 +122,10 @@ function Game(props){
             <div className="Counter">
             {typeof props.timer === 'number' ?
                 <div className="Jams">
-                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src={banana} width="85px" /></button>
-                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src={blueberry} width="85px" /></button>
-                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src={grape} width="85px" /></button>
-                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src={strawberry} width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="banana" src='./assets/jams/bananaJam.png' width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="blueberry" src='./assets/jams/blueberryJam.png' width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="grape" src='./assets/jams/grapeJam.png' width="85px" /></button>
+                    <button className="jam" onClick={handleJamClick} disabled={maxJams}><img id="strawberry" src='./assets/jams/strawberryJam.png' width="85px" /></button>
                 </div> : null }
            </div>
            {typeof props.timer === 'number' ?
