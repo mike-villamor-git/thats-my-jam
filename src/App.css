@@ -8,7 +8,7 @@ body {
   padding: 2rem;
   text-align: center;
   background-color:#8f6952;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   border-radius: 3%;
 }
 
@@ -36,10 +36,11 @@ body {
 .map button {
   height: 10%;
   width: 25%;
-  color:rgb(2, 2, 2);
-  background-color: rgb(255, 244, 36);
+  color:rgb(79, 49, 44);
+  background-color: rgb(255, 255, 255);
   margin-top: 10%;
   margin-right: 10%;
+
 }
 
 .Player {
@@ -78,13 +79,13 @@ body {
 }
 
 .Menu {
-  border: 4mm ridge rgba(243, 123, 36, 0.6);
+  border: 4mm ridge #b17e5f;
   position: absolute;
   z-index: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(247, 213, 45);
+  background-color: #FFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,3 +125,38 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.startButton{
+  background-color: #fbeee0;
+  border: 2px solid #6a4935;
+  border-radius: 30px;
+  box-shadow: #6a4935 4px 4px 0 0;
+  color: #6a4935;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.startButton:hover {
+  background-color: #fff;
+}
+
+.startButton:active {
+  box-shadow: #5c3f19 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .startButton {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
