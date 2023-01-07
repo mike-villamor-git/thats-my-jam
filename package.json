@@ -30,7 +30,10 @@
     "url": "https://github.com/mike-villamor-git/thats-my-jam/issues"
   },
   "pkg": {
-    "assets": "assets/**"
-},
+    "scripts": "build/**/*.js",
+    "assets": "assets/**/*",
+    "targets": [ "node14-linux-arm64" ],
+    "outputPath": "dist"
+  },
   "homepage": "https://github.com/mike-villamor-git/thats-my-jam#readme"
 }
