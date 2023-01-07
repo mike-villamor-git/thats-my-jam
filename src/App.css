@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 20px 0px 0px 0px;
   position: relative;
@@ -73,7 +74,7 @@ body {
 
 .navBar p {
   margin-right: 40px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: #FFFF
 }

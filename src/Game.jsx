@@ -8,6 +8,18 @@ function Game(props){
     const [flavor, setFlavor] = useState([Math.floor(Math.random() * 3), Math.floor(Math.random() * 4), Math.floor(Math.random() * 4), Math.floor(Math.random() * 4)])
     const [chooseJam, setChooseJam] = useState([])
     const [maxJams, setMaxJams] = useState(false)
+    const [customerMood, setCustomerMood] = useState(0)
+
+    function handleCustomerMood(mood){
+        setCustomerMood(mood)
+        setTimeout(() => {
+            setCustomerMood(0)
+            newCustomer();
+            newFlavors();
+            setMaxJams(false);
+            setChooseJam([]);
+        }, 500)
+    }
     
 
     
@@ -22,10 +34,6 @@ function Game(props){
 
     function handleServeClick(){
         calculatePoints();
-        newCustomer();
-        newFlavors();
-        setMaxJams(false);
-        setChooseJam([]);
     }
 
     function handleJamClick(e){
@@ -84,10 +92,12 @@ function Game(props){
 
        if(numBananas !== actualNumBananas || numBlue !== actualNumBlue || numGrapes !== actualNumGrapes || numStraw !== actualNumStraw){
         console.log('wrong order! no points!')
+        handleCustomerMood(1)
         
        }
        else {
         props.addPoints()
+        handleCustomerMood(2)
        }
        return
     }
@@ -104,7 +114,7 @@ function Game(props){
             </div>
            </div>
       
-           <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]}/>
+           <Customer currCustomer={customer} first={flavor[0]} second={flavor[1]} third={flavor[2]} fourth={flavor[3]} mood={customerMood}/>
            
            <button onClick={handleServeClick} class = "serveButton">Serve</button>
         </div>

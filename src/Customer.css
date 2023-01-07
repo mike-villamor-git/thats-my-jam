@@ -15,93 +15,133 @@
     background-size: cover;
   }
 
-  .bear {
+.deer-angry {
+  background-image: url("./assets/customers/madDeer.PNG");
+  background-size: cover;
+}
 
-    background-image: url("./assets/customers/bear.png");
-    background-size: cover;
-  }
+.deer-happy {
+  background-image: url("./assets/customers/happyDeer.PNG");
+  background-size: cover;
+}
 
-  .elephant {
-    background-image: url("./assets/customers/elephant.png");
-    background-size: cover;
-  }
+.bear {
 
-  .fly {
-    background-image: url("./assets/customers/fly.png");
-    background-size: cover;
-  }
+  background-image: url("./assets/customers/bear.png");
+  background-size: cover;
+}
 
-  .bubble {
-    width: 300px;
-    height: 300px;
-    background-image: url("./assets/jamGame/bubble.PNG");
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+.bear-angry {
+  background-image: url("./assets/customers/madBear.PNG");
+  background-size: cover;
+}
 
-  .b-deer {
-    margin-left: 55%;
-    margin-top: 15%;
-  }
+.bear-happy {
+  background-image: url("./assets/customers/happyBear.PNG");
+  background-size: cover;
+}
 
-  .b-elephant {
-    margin-left: 85%;
-    margin-top: 35%;
-  }
+.elephant {
+  background-image: url("./assets/customers/elephant.png");
+  background-size: cover;
+}
 
-  .b-fly {
-    margin-left: 55%;
-    margin-top: 15%;
-  }
+.elephant-angry {
+  background-image: url("./assets/customers/madElephant.PNG");
+  background-size: cover;
+}
 
-  .b-bear {
-    margin-left: 55%;
-    margin-top: -10%;
-  }
+.elephant-happy {
+  background-image: url("./assets/customers/happyElephant.PNG");
+  background-size: cover;
+}
 
-  .fruit {
-    width: 75px;
-    height: 75px;
-  }
+.fly {
+  background-image: url("./assets/customers/fly.png");
+  background-size: cover;
+}
 
-  .banana {
-    background-image: url("./assets/jamGame/banana.png");
-    background-size: cover;
-  }
+.fly-angry {
+  background-image: url("./assets/customers/madFly.PNG");
+  background-size: cover;
+}
 
-  .strawberry {
-    background-image: url("./assets/jamGame/strawberry.png");
-    background-size: cover;
-  }
+.fly-happy {
+  background-image: url("./assets/customers/happyFly.PNG");
+  background-size: cover;
+}
 
-  .blueberry {
-    background-image: url("./assets/jamGame/blueberry.png");
-    background-size: cover;
-  }
+.bubble {
+  width: 300px;
+  height: 300px;
+  background-image: url("./assets/jamGame/bubble.PNG");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
-  .grape {
-    background-image: url("./assets/jamGame/grape.png");
-    background-size: cover;
-  }
+.b-deer {
+  margin-left: 55%;
+  margin-top: 15%;
+}
 
-  .f-1 {
-    margin-top: 40%;
-    margin-left: 50%;
-  }
+.b-elephant {
+  margin-left: 85%;
+  margin-top: 35%;
+}
 
-  .f-2 {
-    margin-top: 40%;
-    margin-left: 20%;
-  }
+.b-fly {
+  margin-left: 55%;
+  margin-top: 15%;
+}
 
-  .f-3 {
-    margin-left: 50%;
-    margin-top: -21%;
-  }
+.b-bear {
+  margin-left: 55%;
+  margin-top: -10%;
+}
 
-  .f-4 {
-    margin-top: -20%;
-    margin-left: 20%;
-  }
+.fruit {
+  width: 75px;
+  height: 75px;
+}
+
+.banana {
+  background-image: url("./assets/jamGame/banana.png");
+  background-size: cover;
+}
+
+.strawberry {
+  background-image: url("./assets/jamGame/strawberry.png");
+  background-size: cover;
+}
+
+.blueberry {
+  background-image: url("./assets/jamGame/blueberry.png");
+  background-size: cover;
+}
+
+.grape {
+  background-image: url("./assets/jamGame/grape.png");
+  background-size: cover;
+}
+
+.f-1 {
+  margin-top: 40%;
+  margin-left: 50%;
+}
+
+.f-2 {
+  margin-top: 40%;
+  margin-left: 20%;
+}
+
+.f-3 {
+  margin-left: 50%;
+  margin-top: -21%;
+}
+
+.f-4 {
+  margin-top: -20%;
+  margin-left: 20%;
+}
