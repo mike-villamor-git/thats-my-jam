@@ -8,7 +8,7 @@ function Menu(props) {
     }
 
     const handleReset = () => {
-        props.setResetTimer(false)
+        props.setResetTimer()
         props.closeMenu();
     }
     return (
