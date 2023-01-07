@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import './Game.css'
 import Customer from './Customer'
 import Menu from './Menu'
-import banana from './assets/jams/bananaJam.png'
-import blueberry from './assets/jams/blueberryJam.png'
-import grape from './assets/jams/grapeJam.png'
-import strawberry from './assets/jams/strawberryJam.png'
+import banana from '../dist/assets/jams/bananaJam.png'
+import blueberry from '../dist/assets/jams/blueberryJam.png'
+import grape from '../dist/assets/jams/grapeJam.png'
+import strawberry from '../dist/assets/jams/strawberryJam.png'
 
 function Game(props){
     const [customer, setCustomer] = useState(Math.floor(Math.random() * 4))
