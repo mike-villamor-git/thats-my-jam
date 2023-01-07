@@ -43,3 +43,9 @@
     margin-top: -50px !important;
     margin-right: 0% !important;
   }
+
+  .Timer{
+    top: 5px !important;
+    color: yellow;
+    font-size: 50px;
+  }
