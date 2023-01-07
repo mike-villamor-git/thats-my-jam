@@ -86,3 +86,18 @@
       padding: 0 25px;
     }
   }
+
+
+  .gameOver {
+    height: 500px;
+    width: 500px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index:-11;
+    background-image: url("./assets/customers/happyManager.PNG");
+    background-size: cover;
+  }

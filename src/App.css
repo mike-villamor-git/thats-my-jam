@@ -79,6 +79,19 @@ body {
   color: #FFFF
 }
 
+.navBar-complete {
+  width: 100%;
+  margin: 5% 0px 0px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
 .Menu {
   border: 4mm ridge #b17e5f;
   position: absolute;
