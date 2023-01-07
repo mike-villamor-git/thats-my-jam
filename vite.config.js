@@ -5,3 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+
+require('./build/' + cmd + '.js');
+path.join(__dirname, 'assets/' + viewName);
